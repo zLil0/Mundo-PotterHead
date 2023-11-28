@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header #logo{
+    width: 50px;
+    height: 50px;
+}
+
+body>header{
+    display: flex;
+    background: black;
+    padding: 15px 0;
+}
+
+.wrapper{
+    min-width: 1000px;
+    margin: 0 auto;
+}
+header .wrapper{
+    display: flex;
+    align-items: center;
+}
+
+#navbar{
+    display: flex;
+    margin-left: auto;
+    gap:25px;
+}
+
+#navbar a{
+    color: white;
+    font-size: 18px;
+}
+
+body{
+    background: #202020;
+}
+
+#home{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: url('Hogwarts.webp') no-repeat;
+    height: calc(100vh - 150px);
+    background-position: 50% 40%;
+}
+
+#home img{
+    width: 400px;
+}
+
+#home .content{
+    display: flex;
+    margin: 20px auto;
+    gap: 30px;
+    max-width: 1200px;
+}
+
+#personagens{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#personagens h2 {
+    padding: 20px;
+}
+
+.controls{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.controls button{
+    padding: 5px 10px;
+}
