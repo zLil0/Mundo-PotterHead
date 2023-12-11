@@ -13,9 +13,9 @@
         <div class="wrapper">
             <img src="img/HarryPotterLogo.svg" alt="Logo" id="logo">
             <nav id="navbar">
-                <a href="">Home</a>
-                <a href="">Personagens</a>
-                <a href="">Feitiços</a>
+                <a href="#home">Home</a>
+                <a href="#personagens">Personagens</a>
+                <a href="#feiticos">Feitiços</a>
                 <a href="">Casas</a>
             </nav>
         </div>
@@ -26,7 +26,7 @@
     <section id="personagens">
         <h2>Personagens</h2>
         <div class="controls">
-            <button>Todos</button>
+            <button onclick="getAllCharacters()">Todos</button>
             <label for="filtro">Filtrar por: </label>
             <select name="filtro" id="filtro">
                 <option value="todos">Todos</option>
@@ -37,9 +37,30 @@
                 <option value="lufalufa">Lufa-Lufa</option>
                 <option value="sonserina">Sonserina</option>
             </select>
-            Pesquisar: <input type="text">
+            <input type="text" id="searchChar">
+            <button onclick="searchCharacter()">Pesquisar</button>
+        </div>
+        <div id="charCards">
+            
+        </div>
+    </section>
+    <section id="feiticos">
+        <h2>Feitiços</h2>
+        <div class="controls">
+            <button onclick="getAllSpell()">Todos</button>
+            <label for="filtro">Filtrar por: </label>
+            <select name="filtro" id="filtroSpell">
+                <option value="todos">Todos</option>
+                <option value="curse">Maldição</option>
+            </select>
+            <input type="text" id="searchSpell">
+            <button onclick="searchSpell()">Pesquisar</button>
+        </div>
+        <div id="spellCards">
+            
         </div>
     </section>
 </body>
+<script src="js/script.js"></script>
 
 </html>

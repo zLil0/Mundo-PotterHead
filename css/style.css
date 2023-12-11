@@ -1,45 +1,47 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
-header #logo{
+header #logo {
     width: 50px;
     height: 50px;
 }
 
-body>header{
+body>header {
     display: flex;
     background: black;
     padding: 15px 0;
 }
 
-.wrapper{
+.wrapper {
     min-width: 1000px;
     margin: 0 auto;
 }
-header .wrapper{
+
+header .wrapper {
     display: flex;
     align-items: center;
 }
 
-#navbar{
+#navbar {
     display: flex;
     margin-left: auto;
-    gap:25px;
+    gap: 25px;
 }
 
-#navbar a{
+#navbar a {
     color: white;
     font-size: 18px;
 }
 
-body{
+body {
     background: #202020;
 }
 
-#home{
+#home {
     color: white;
     display: flex;
     justify-content: center;
@@ -50,35 +52,105 @@ body{
     background-position: 50% 40%;
 }
 
-#home img{
+#home img {
     width: 400px;
 }
 
-#home .content{
+#home .content {
     display: flex;
     margin: 20px auto;
     gap: 30px;
     max-width: 1200px;
 }
 
-#personagens{
+#personagens {
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 500px;
 }
 
 #personagens h2 {
     padding: 20px;
 }
 
-.controls{
+#feiticos {
+    color: white;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+#feiticos h2 {
+    padding: 20px;
+}
+
+.controls {
     display: flex;
     gap: 20px;
     align-items: center;
+    padding: 0 20px 20px 20px;
+    border-bottom: 1px solid white;
 }
 
-.controls button{
+.controls button {
     padding: 5px 10px;
+    /* background: rgb(194, 73, 97); */
+    background: white;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transform: scale(1);
+    transition: .3s;
+}
+.controls input[type="text"]{
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+}
+
+.controls button:hover{
+    transform: scale(1.03);
+    transition: .3s;
+}
+
+#charCards {
+    margin: 40px 0 20px 0;
+    display: flex;
+    gap: 20px;
+    max-width: 904px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    border: 1px solid black;
+    background: #313131;
+    transition: .3s;
+    transform: scale(1);
+    cursor: pointer;
+    max-width: 160px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.info {
+    padding: 10px;
+}
+
+#spellCards {
+    margin: 40px 0 20px 0;
+    display: flex;
+    gap: 20px;
+    max-width: 904px;
+    flex-wrap: wrap;
 }
